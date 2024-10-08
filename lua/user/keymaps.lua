@@ -76,6 +76,7 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- save
 keymap("i", "<C-s>", "<cmd>w!<cr>", opts)
+keymap("n", "<C-s>", "<cmd>w!<cr>", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)

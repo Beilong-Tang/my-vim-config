@@ -16,12 +16,12 @@ local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
 nvim_tree.setup {
     disable_netrw = true,
     hijack_netrw = true,
-    open_on_setup = false,
-    ignore_ft_on_setup = {
-        "startify",
-        "dashboard",
-        "alpha",
-    },
+    --[[ open_on_setup = false, ]]
+    --[[ ignore_ft_on_setup = { ]]
+    --[[     "startify", ]]
+    --[[     "dashboard", ]]
+    --[[     "alpha", ]]
+    --[[ }, ]]
     open_on_tab = false,
     hijack_cursor = false,
     update_cwd = true,
@@ -50,25 +50,25 @@ nvim_tree.setup {
     },
     view = {
         width = 30,
-        height = 30,
-        hide_root_folder = false,
+        --height = 30,
+        --[[ hide_root_folder = false, ]]
         side = "left",
-        auto_resize = true,
-        mappings = {
-            custom_only = false,
-            list = {
-            { key = { "l", "<CR>", "o" }, action ="edit" },
-            { key = "h", action = "close_node" },
-            { key = "v", action = "vsplit" },
-            },
-        },
+        --[[ auto_resize = true, ]]
+        --[[ mappings = { ]]
+        --[[     custom_only = false, ]]
+        --[[     list = { ]]
+        --[[     { key = { "l", "<CR>", "o" }, action ="edit" }, ]]
+        --[[     { key = "h", action = "close_node" }, ]]
+        --[[     { key = "v", action = "vsplit" }, ]]
+        --[[     }, ]]
+        --[[ }, ]]
         number = false,
         relativenumber = false,
     },
-    actions = {
-        quit_on_open = true,
-        window_picker = { enable = true },
-    },
+    --[[ actions = { ]]
+    --[[     quit_on_open = true, ]]
+    --[[     window_picker = { enable = true }, ]]
+    --[[ }, ]]
     renderer = {
         highlight_git = true,
         root_folder_modifier = ":t",
