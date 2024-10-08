@@ -1,58 +1,18 @@
-# Neovim from scratch
+# My Vim Config
 
-## Try out this config
+This repository serves as my neovim config.
 
-Make sure to remove or move your current `nvim` directory
+## Pre-requirements:
+    1. Neovim V0.10.0+
+    2. Nerd font
 
-```
-git clone git@github.com:ChristianChiarulli/Neovim-from-scratch.git ~/.config/nvim
-```
+## Installation
 
-Run `nvim` and wait for the plugins to be installed 
+```shell
+git clone https://github.com/Beilong-Tang/my-vim-config.git 
 
-**NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
+mv my-vim-config nvim
 
-
-each video will be associated with a branch so checkout the one you are interested in
-
-## Get healthy
-
-Open `nvim` and enter the following:
+mv nvim ~/.config
 
 ```
-:checkhealth
-```
-
-You'll probably notice you don't have support for copy/paste also that python and node haven't been setup
-
-So let's fix that
-
-First we'll fix copy/paste
-
-- On mac `pbcopy` should be builtin
-
-- On Ubuntu
-
-  ```
-  sudo apt install xsel
-  ```
-
-- On Arch Linux
-
-  ```
-  sudo pacman -S xsel
-  ```
-
-Next we need to install python support (node is optional)
-
-- Neovim python support
-
-  ```
-  pip install pynvim
-  ```
-
-- Neovim node support
-
-  ```
-  npm i -g neovim
-  ```
